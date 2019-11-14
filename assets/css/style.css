@@ -173,6 +173,9 @@ a
 {
     width: 45%;
 }
+.header__title-image{
+    display: none;
+}
 .logo
 {
     font-weight: 400;
@@ -211,7 +214,7 @@ a
 .news_suptitle
 {
     font-family: Montserrat,sans-serif;
-    font-size: 32px;
+    font-size: 26px;
 
     color: #bdbdb5;
 }
