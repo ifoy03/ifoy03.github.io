@@ -378,6 +378,9 @@ a
 {
     font-family: Poppins,sans-serif;
 }
+.three-dots{
+    display: none;
+}
 .about-us__title
 {
     font-family: Montserrat,sans-serif;
@@ -407,12 +410,12 @@ a
 }
 .about-us__info__image
 {
-
+    text-align: center;
     z-index: 3;
 }
 .about-us__info__img
 {
-    width: 100%;
+        max-width: 100%;
 }
 .about-us__info__text
 {
@@ -464,7 +467,7 @@ a
 	flex: 1 1 0;
 }
 .portfolio__item{
-	margin-left: 30px;
+	margin:0 15px;
 	position: relative;
 	cursor: pointer;
 }
