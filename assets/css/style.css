@@ -105,11 +105,12 @@ a
 {
     position: relative;
 
-    margin-bottom: 100px;
+    
 
     display: -webkit-box;
 
     display: flex;
+    margin-bottom: 100px;
 }
 /* Circle */
 .circle,
