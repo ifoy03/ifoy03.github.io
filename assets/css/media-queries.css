@@ -244,6 +244,10 @@ and (max-width : 551px){
 	.reviews{
 		margin-bottom: 50px;
 	}
+	.comment__reviews{
+		width: inherit;
+		height: inherit;
+	}
 	.reviews__content__title{
 		width: 100%;
 		text-align: center;
@@ -288,6 +292,10 @@ and (max-width : 701px){
 	}
 }
 @media only screen and (min-width: 1000px) and (max-width: 1130px){
+	.comment__reviews{
+		width: inherit;
+		height: inherit;
+	}
 	.reviews__content__title{
 		width: 100%;
 		text-align: center;

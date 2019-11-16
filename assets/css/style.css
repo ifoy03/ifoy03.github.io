@@ -566,7 +566,6 @@ a
 {
     display: -webkit-box;
     display: flex;
-
     margin-top: 100px;
 }
 .quotes i
@@ -588,6 +587,9 @@ a
 
     color: #222;
 }
+.comment__reviews{
+        width: auto;
+}
 .reviews__content__comments__items
 {
     display: -webkit-box;
@@ -597,6 +599,7 @@ a
 }
 .reviews__content__comments__item
 {
+    flex: 1 1 0;
     margin: 0 15px;
 }
 .comment__block__inner
@@ -754,8 +757,6 @@ a
 
     border-radius: 20px 0 0 20px;
     box-shadow: 0 0 5px 1px rgba(191, 191, 255, .85);
-    -webkit-box-shadow: 0 0 5px 1px rgba(191, 191, 255, .85);
-    -moz-box-shadow: 0 0 5px 1px rgba(191, 191, 255, .85);
 }
 .form__submit
 {
@@ -990,4 +991,14 @@ a
     text-transform: uppercase;
 
     color: #fff;
+}
+.popup_close{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #DE1F1C;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
 }

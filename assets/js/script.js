@@ -12,6 +12,12 @@ window.onclick = function(e){
 		all.style.overflow ="visible";
 	}
 }
+function popup_close(){
+	var all = document.getElementById('all');
+	var pop_up = document.getElementById('pop_up');
+	pop_up.style.visibility = "hidden";
+	all.style.overflow ="visible";
+}
 
 /* Якори покрутки */
 $('a[href^="#"]').bind("click", function(e){
