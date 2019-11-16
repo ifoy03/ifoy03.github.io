@@ -30,6 +30,7 @@
 							<h1 class="logo_title"><a href="cedastudio.com" class="logo_title">cedastudio</a></h1>
 							<span class="logo_subtitle"><a href="cedastudio.com" class="logo_subtitle">web developement</a></span>
 						</div>
+						<div class="header__title-image"><img src="assets/images/header.jpg" alt="#" class="header__title-img"></div>
 						<div class="header__news">
 							<div class="news__content">
 								<p class="news_suptitle">Мы веб Разработчики</p>
@@ -38,28 +39,6 @@
 								  Здесь бывают чудеса.Делают все как надо и красиво.Понимаю все с первого раза.
 								</p>
 							</div>
-								<!-- <div class="news__control">
-									<a href="#" class="control_direction">
-										<span class="arrow arrow--left"><i class="fas fa-long-arrow-alt-left"></i></span>
-										<span class="left direction_active">Пред.</span>
-									</a>
-									<ul class="control__dots">
-										<li class="li_dot">
-											<a href="#" class="li_dot"><span class="control_dot active"></span></a>
-										</li>
-										<li class="li_dot">
-											<a href="#" class="li_dot"><span class="control_dot"></span></a>
-										</li>	
-										<li class="li_dot">
-											<a href="#" class="li_dot"><span class="control_dot"></span></a>
-										</li>			
-									</ul>
-									<a href="#" class="control_direction">
-										<span class="right">След.</span>
-										<span class="arrow arrow--right arrow--active"><i class="fas fa-long-arrow-alt-right"></i></span>
-									</a>
-								</div> -->
-							
 						</div>
 						</div>
 						<div class="header__column">
@@ -267,20 +246,21 @@
 				<div class="request__form">
 						<p class="form__title">Подать Заявку</p>
 						<p class="form__text">Мы живем своей работой, мы те кто сбывает мечты, быстро найдем общий язык и будем стремится к общим <span class="form__atention"> целям!</span> </p>
-						<form action="mailto:" class="form">
-							<input type="text" class="form__mail" placeholder="Введите вашу почту" name="mail"><input type="submit" class="form__submit" value="Отправить" name="done">
+						<form action="mail.php" method="POST" class="form">
+							<input type="text" class="form__mail" placeholder="Введите вашу почту" name="user_mail"><button type="submit" class="form__submit" name="Отправка">Отправить</button>
 						</form>
 						<!-- Popup -->
-						<div class="popup" id="pop_up">
+						<div class="popup"  id="pop_up">
 							<div class="popup_content">
 								<p class="popup__title">подать заявку</p>
-								<form class="form form__popup">
-									<input type="text" name="name" placeholder="Введите ваше имя" class="form__mail mail__popup">
-									<input type="email" name="mail" placeholder="Введите вашу почту" class="form__mail mail__popup">
-									<input type="number" name="phone" placeholder="Введите ваш номер" class="form__mail mail__popup">
-									<input type="submit" name="done" value="Отправить" class="form__submit submit__popup">
+								<form action="mail.php" method="POST" class="form form__popup">
+										<input type="text" name="user_name" placeholder="Введите ваше имя" class="form__mail mail__popup">
+										<input type="email" name="user_mail" placeholder="Введите вашу почту" class="form__mail mail__popup">
+										<input type="number" name="user_phone" placeholder="Введите ваш номер" class="form__mail mail__popup">
+										<button type="submit" name="send" class="form__submit submit__popup">Отправить</button>
 								</form>
-								<button class="popup_close" id="popup_btn_close" onclick="popup_close()">X</button>
+									<button class="popup_close" id="popup_btn_close" onclick="popup_close()">X</button>
+							
 							</div>
 						</div>
 						<!-- /Popup -->

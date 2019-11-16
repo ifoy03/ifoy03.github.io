@@ -389,6 +389,10 @@ a
 
     border-radius: 0 0 0 100%;
 }
+.header__title-image{
+    display: none;
+}
+
 /* ABOUT US */
 .about_us
 {
