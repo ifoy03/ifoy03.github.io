@@ -1,4 +1,7 @@
 /* Scroll */
+.hidden{
+    display: none;
+}
 .page{
     -webkit-animation: fadeIn 1s;animation: fadeIn 1s;
 }
@@ -23,9 +26,6 @@
     color: #fff;
     transition: background .2s linear,color .2s linear;
     opacity: 0.5;
-}
-.scroll__hidden{
-    display: none;
 }
 
 /* Float */
@@ -202,9 +202,6 @@ a
 .header__column:first-child
 {
     width: 45%;
-}
-.header__title-image{
-    display: none;
 }
 .logo
 {
@@ -408,9 +405,6 @@ a
 .btn
 {
     font-family: Poppins,sans-serif;
-}
-.three-dots{
-    display: none;
 }
 .about-us__title
 {
