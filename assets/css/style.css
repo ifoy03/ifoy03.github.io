@@ -754,6 +754,7 @@ a
 
     border-radius: 20px 0 0 20px;
     box-shadow: 0 0 5px 1px rgba(191, 191, 255, .85);
+    -webkit-box-shadow: 0 0 5px 1px rgba(191, 191, 255, .85);
 }
 .form__submit
 {
