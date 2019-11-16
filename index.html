@@ -1,6 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="" id="all">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152596592-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152596592-1');
+</script>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
@@ -10,15 +20,15 @@
 	<link rel="stylesheet" href="assets/css/all.css">
 	<link rel="stylesheet" href="assets/css/media-queries.css">
 </head>
-<body>
+<body > <!-- Body -->
 	<div class="page">
-		<header class="header"> <!-- Header -->
+		<header class="header" id="home"> <!-- Header -->
 			<div class="container">
 				<div class="header__inner"> <!-- Header inner -->
 					<div class="header__column">
 						<div class="logo">
-							<h1 class="logo_title"><a href="#" class="logo_title">cedastudio</a></h1>
-							<span class="logo_subtitle"><a href="#" class="logo_subtitle">web developement</a></span>
+							<h1 class="logo_title"><a href="cedastudio.com" class="logo_title">cedastudio</a></h1>
+							<span class="logo_subtitle"><a href="cedastudio.com" class="logo_subtitle">web developement</a></span>
 						</div>
 						<div class="header__title-image">
 							<img src="assets/images/header.jpg" alt="#" class="header__title-img">
@@ -56,11 +66,11 @@
 						</div>
 						</div>
 						<div class="header__column">
-							<div class="header_image"><img src="assets/images/header.png" alt="#" class="header_img">
+							<div class="header_image"><img src="assets/images/header.jpg" alt="#" class="header_img">
 						  </div>
 				  	</div>
 					<div class="down_to">
-						<a href="#" class="down_to-link"><span class="circle">
+						<a href="#services" class="down_to-link" id="down_circle"><span class="circle">
 							<span class="circle-arrow litle-arrow"></span>
 							<span class="circle-arrow big-arrow"></span></span>
 						</a>
@@ -68,7 +78,49 @@
 			  </div> <!-- /Header inner -->
 			</div>
 		</header> <!-- /Header -->
-		<section class="about_us">
+		<section class="request" id="services"> <!-- Request -->
+			<div class="container--small">
+					<h2 class="about-us__title">Наши Услуги</h2>
+					<p class="about-us__subtitle">24/7</p>
+						<div class="skills">
+							<div class="skills__row">
+								<div class="skills__item">
+									<div class="skills__content">
+									<span class="skills__ico"><i class="fas fa-magic"></i></span>
+									<p class="skills__title">front-end</p>
+									<p class="skills__info">HTML+CSS+JS кодирование дизайнов любой сложности</p>
+									</div>
+									<button class="about__us__button btn" onclick="popup()">Узнать больше</button>
+								</div>
+								<div class="skills__item">
+									<div class="skills__content">
+									<span class="skills__ico"><i class="fas fa-puzzle-piece"></i></span>
+									<p class="skills__title">web программирование</p>
+									<p class="skills__info">Создание различных web-приложений</p>
+									</div>
+									<button class="about__us__button btn" onclick="popup()">Узнать больше</button>
+								</div>
+								<div class="skills__item">
+									<div class="skills__content">
+									<span class="skills__ico"><i class="fab fa-wordpress"></i></span>
+									<p class="skills__title">wordpress</p>
+									<p class="skills__info">Разработка сайтов - от блога до интернет магазина</p>
+									</div>
+									<button class="about__us__button btn" onclick="popup()">Узнать больше</button>
+								</div>
+								<div class="skills__item">
+									<div class="skills__content">
+									<span class="skills__ico"><i class="far fa-question-circle"></i></span>
+									<p class="skills__title">консултация</p>
+									<p class="skills__info">Готов делиться своим опытом с заинтересованным клиентом</p>
+									</div>
+									<button class="about__us__button btn" onclick="popup()">Узнать больше</button>
+								</div>
+							</div>
+			</div>
+		</div>
+		</section> <!-- /Request -->
+		<section class="about_us" id="us_info"> <!-- About us -->
 			<div class="container--small">
 				<div class="about-us__body">
 					<div class="about-us__content">
@@ -76,15 +128,15 @@
 						<p class="about-us__subtitle">Про нас</p>
 						<div class="about-us__info">
 							<div class="about-us__info__image"><img src="assets/images/about-us-choise.png" alt="#" class="about-us__info__img"></div><div class="clearfix"></div>
-							<div class="about-us__info__text"><p class="about-us__info__text"> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms <a class="three-dots" href="#">...</a> <span class="hidden-text"> of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents </span></p></div>
+							<div class="about-us__info__text"><p class="about-us__info__text"> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms <a id="dotsMore" class="three-dots comment__text" href="javascript://0" onclick="textMore()">...</a> <span class="hidden-text" id="txtMore"> of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents </span><a href="javascript://0" onclick="hiden()" id="hidden_moreText" class="comment__text hidden-text">Скрыть</a></p></div>
 
 						</div>
 						
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="portfolio">
+		</section> <!-- /About us -->
+		<section class="portfolio" id="works"> <!-- Portfolio -->
 			<div class="container">
 				<h2 class="about-us__title">Наши работы</h2>
 				<div class="portfolio__row">
@@ -92,47 +144,47 @@
 						<div class="portfolio__item">
 							<div class="portfolio__content">
 								<p class="portfolio__title">promo site</p>
-								<p class="portfolio__info">this is a promo site created with pleasure</p>
+								
+							</div>
+							<div class="portfolio__image"><img src="assets/images/50PortfolioSites4.jpg" alt="" class="portfolio__img"></div>
+						</div>
+						<div class="portfolio__item portfolio__item-hidden">
+							<div class="portfolio__content">
+									<p class="portfolio__title">promo site</p>
+									
 							</div>
 							<div class="portfolio__image"><img src="assets/images/50PortfolioSites4.jpg" alt="" class="portfolio__img"></div>
 						</div>
 						<div class="portfolio__item portfolio__item-hidden">
 							<div class="portfolio__content">
 								<p class="portfolio__title">promo site</p>
-								<p class="portfolio__info">this is a promo site created with pleasure</p>
-							</div>
-							<div class="portfolio__image"><img src="assets/images/50PortfolioSites4.jpg" alt="" class="portfolio__img"></div>
-						</div>
-						<div class="portfolio__item portfolio__item-hidden">
-							<div class="portfolio__content">
-								<p class="portfolio__title">promo site</p>
-								<p class="portfolio__info">this is a promo site created with pleasure</p>
+								
 							</div>
 							<div class="portfolio__image"><img src="assets/images/50PortfolioSites4.jpg" alt="" class="portfolio__img"></div>
 						</div>
 						
 					</div>
 				</div>
-				<div class="portfolio__row">
+				<div class="portfolio__row portfolio__row--hidden">
 					<div class="portfolio__items">
 						<div class="portfolio__item portfolio__item-hidden">
 							<div class="portfolio__content">
 								<p class="portfolio__title">promo site</p>
-								<p class="portfolio__info">this is a promo site created with pleasure</p>
+								
 							</div>
 							<div class="portfolio__image"><img src="assets/images/50PortfolioSites4.jpg" alt="" class="portfolio__img"></div>
 						</div>
 						<div class="portfolio__item portfolio__item-hidden">
 							<div class="portfolio__content">
 								<p class="portfolio__title">promo site</p>
-								<p class="portfolio__info">this is a promo site created with pleasure</p>
+								
 							</div>
 							<div class="portfolio__image"><img src="assets/images/50PortfolioSites4.jpg" alt="" class="portfolio__img"></div>
 						</div>
 						<div class="portfolio__item portfolio__item-hidden">
 							<div class="portfolio__content">
 								<p class="portfolio__title">promo site</p>
-								<p class="portfolio__info">this is a promo site created with pleasure</p>
+								
 							</div>
 							<div class="portfolio__image"><img src="assets/images/50PortfolioSites4.jpg" alt="" class="portfolio__img"></div>
 						</div>
@@ -140,53 +192,12 @@
 					</div>
 				</div>
 				<div class="about__us__button">
-							<button class="about__us__button btn">больше работ</button>
+							<button class="about__us__button btn" onclick="popup()">заказать</button>
 				</div>
 			</div>
-		</section>
-		<section class="services">
-			<div class="container--small">
-				<div class="services__body">
-					<h2 class="about-us__title">Наши умения</h2>
-					<p class="about-us__subtitle">стек веб технологий</p>
-					<div class="services__info">
-						<div class="services__image">
-							<div class="services__image__items">
-								<div class="services__image__item">
-									<div class="services__content">
-										<span class="services__image__arrow image__arrow-left"></span>
-										<img src="assets/images/html.svg" alt="Html5" class="service__logo">
-										<p class="services__title">html5</p>
-										<p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque consectetur, dicta saepe reiciendis maiores!</p>
-										<span class="services__image__arrow image__arrow-right"></span>
-									</div>
-								</div>
-								<div class="services__image__item">
-									<div class="services__content">
-										<span class="services__image__arrow image__arrow-left"></span>
-										<img src="assets/images/css.svg" alt="" class="service__logo">
-										<p class="services__title">css3</p>
-										<p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque consectetur, dicta saepe reiciendis maiores!</p>
-										<span class="services__image__arrow image__arrow-right"></span>
-									</div>
-								</div>
-								<div class="services__image__item">
-									<div class="services__content">
-										<span class="services__image__arrow image__arrow-left"></span>
-										<img src="assets/images/js.svg" alt="java script" class="service__logo">
-										<p class="services__title">java script</p>
-										<p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque consectetur, dicta saepe reiciendis maiores!</p>
-										<span class="services__image__arrow image__arrow-right"></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="reviews">
-			<div class="container">
+		</section> <!-- Portfolio -->
+		<section class="reviews" id="comment"> <!-- Reviews -->
+			<div class="container container--reviews">
 				<div class="reviews__content">
 					<div class="reviews__content__title">
 						<span class="quotes"><i class="fas fa-quote-left"></i></span>
@@ -249,64 +260,36 @@
 					</div>	
 				</div>
 			</div>
-		</section>
-		<section class="request">
-			<div class="container--small">
-					<h2 class="about-us__title">Наши Услуги</h2>
-					<p class="about-us__subtitle">24/7</p>
-						<div class="skills">
-							<div class="skills__row">
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-magic"></i></span>
-									<p class="skills__title">front-end</p>
-									<p class="skills__info">HTML+CSS+JS coding of designs of any complexity</p>
-									</div>
-								</div>
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-puzzle-piece"></i></span>
-									<p class="skills__title">web programming</p>
-									<p class="skills__info">Creation of various web applications</p>
-									</div>
-								</div>
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fab fa-wordpress"></i></span>
-									<p class="skills__title">wordpress</p>
-									<p class="skills__info">Development of the websites - from blog to e-commerce</p>
-									</div>
-								</div>
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="far fa-question-circle"></i></span>
-									<p class="skills__title">консултация</p>
-									<p class="skills__info">I'm ready to impart experience with the interested client</p>
-									</div>
-								</div>
-							</div>
-							<div class="about__us__button">
-							<button class="about__us__button btn">Узнать больше</button>
-							</div>
-						</div>
-			</div>
-		</section>
-		<div class="prefooter">
+		</section> <!-- /Reviews -->
+		<div class="prefooter" id="mail_form"> <!-- Prefooter -->
 			<div class="container--small">
 				<div class="request__form">
 						<p class="form__title">Подать Заявку</p>
-						<p class="form__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est molestiae, corrupti quibusdam dolores eligendi, dignissimos illum laboriosam suscipit corporis ab inventore ea!</p>
+						<p class="form__text">Мы живем своей работой, мы те кто сбывает мечты, быстро найдем общий язык и будем стремится к общим <span class="form__atention"> целям!</span> </p>
 						<form action="mailto:" class="form">
-							<input type="text" class="form__mail" placeholder="Введите вашу почту"><input type="submit" class="form__submit" value="Отправить">
+							<input type="text" class="form__mail" placeholder="Введите вашу почту" name="mail"><input type="submit" class="form__submit" value="Отправить" name="done">
 						</form>
+						<!-- Popup -->
+						<div class="popup" id="pop_up">
+							<div class="popup_content">
+								<p class="popup__title">подать заявку</p>
+								<form class="form form__popup">
+									<input type="text" name="name" placeholder="Введите ваше имя" class="form__mail mail__popup">
+									<input type="email" name="mail" placeholder="Введите вашу почту" class="form__mail mail__popup">
+									<input type="number" name="phone" placeholder="Введите ваш номер" class="form__mail mail__popup">
+									<input type="submit" name="done" value="Отправить" class="form__submit submit__popup">
+								</form>
+							</div>
+						</div>
+						<!-- /Popup -->
 					</div>
 					<div class="feedback">
 						<div class="feedback__items">
 							<div class="feedback__item">
-								<a href="#" class="feedback__link"><span class="feedback__icon"><i class="fab fa-facebook-f"></i></span></a>
+								<a href="www.facebook.com/cedastudio" class="feedback__link"><span class="feedback__icon"><i class="fab fa-facebook-f"></i></span></a>
 							</div>
 							<div class="feedback__item">
-								<a href="#" class="feedback__link"><span class="feedback__icon"><i class="fab fa-facebook-messenger"></i></span></a>
+								<a href="www.instagram.com/cedastudio" class="feedback__link"><span class="feedback__icon"><i class="fab fa-instagram"></i></span></a>
 							</div>
 							<div class="feedback__item">
 								<a href="#" class="feedback__link"><span class="feedback__icon"><i class="fab fa-telegram-plane"></i></span></a>
@@ -317,30 +300,31 @@
 						</div>
 					</div>
 			</div>
-		</div>
-		<footer class="footer">
+		</div> <!-- /Prefooter -->
+		<footer class="footer"> <!-- Footer -->
 			<div class="container--small">
 				<div class="footer__body">
 					<div class="footer__content">
 						<div class="footer__anchor">
-							<span class="anchor__item"><a href="#" class="anchor__links">домой</a></span>
-							<span class="anchor__item"><a href="#" class="anchor__links">про нас</a></span>
-							<span class="anchor__item"><a href="#" class="anchor__links">портфолио</a></span>
-							<span class="anchor__item"><a href="#" class="anchor__links">наши умения</a></span>
-							<span class="anchor__item"><a href="#" class="anchor__links">наши услуги</a></span>
-							<span class="anchor__item"><a href="#" class="anchor__links">заявка</a></span>
+							<span class="anchor__item"><a href="#home" class="anchor__links">домой</a></span>
+							<span class="anchor__item"><a href="#us_info" class="anchor__links">про нас</a></span>
+							<span class="anchor__item"><a href="#works" class="anchor__links">портфолио</a></span>
+							<span class="anchor__item"><a href="#services" class="anchor__links">наши услуги</a></span>
+							<span class="anchor__item"><a href="#mail_form" class="anchor__links">заявка</a></span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<div class="footer__author">
+		</footer> <!-- /Footer -->
+		<div class="footer__author"> <!-- Authors -->
 				<a href="mailto:" class="author__mail"><i class="fas fa-envelope"></i></a>
-				<p class="author">© 2019 cedastudio</p>
-		</div>
+				<p class="author">&copy; 2019 cedastudio</p>
+		</div> <!-- Authors -->
 		<div class="scroll">
-			
+				<a class="scroll_ico" href="#home"><i class="fas fa-arrow-up"></i></a>
 		</div>
 	</div>	<!-- /Page -->
-</body>
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body> <!-- /Body -->
 </html>
