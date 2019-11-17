@@ -5,7 +5,8 @@
 		margin-top: 100px;
 	}
 	.logo_title{
-		justify-content: center;
+		-webkit-box-pack: center;
+		        justify-content: center;
 	}
 }
 @media only screen 
@@ -87,7 +88,8 @@ and (max-width : 851px){
 		width: 100%;
 	}
 	.logo_title{
-		justify-content: initial;
+		-webkit-box-pack: initial;
+		        justify-content: initial;
 	}
 }
 @media only screen and (min-width: 851px) and (max-width: 920px){
@@ -101,7 +103,8 @@ and (max-width : 851px){
 		width: 100%;
 	}
 	.logo_title{
-		justify-content: initial;
+		-webkit-box-pack: initial;
+		        justify-content: initial;
 	}
 }
 @media only screen and (min-width: 920px) and (max-width: 1000px){
@@ -115,7 +118,8 @@ and (max-width : 851px){
 		width: 100%;
 	}
 	.logo_title{
-		justify-content: initial;
+		-webkit-box-pack: initial;
+		        justify-content: initial;
 	}
 }
 @media only screen and (min-width: 1000px) and (max-width: 1130px){
@@ -132,7 +136,8 @@ and (max-width : 851px){
 		width: 100%;
 	}
 	.logo_title{
-		justify-content: initial;
+		-webkit-box-pack: initial;
+		        justify-content: initial;
 	}
 }
 @media only screen and (min-width: 1130px) and (max-width: 1240px){
@@ -146,7 +151,8 @@ and (max-width : 851px){
 		width: 100%;
 	}
 	.logo_title{
-		justify-content: initial;
+		-webkit-box-pack: initial;
+		        justify-content: initial;
 	}
 	.header__news{
 		margin-top: 100px;
@@ -389,8 +395,10 @@ and (max-width : 551px){
 		padding: 5px 0;
 	}
 	.footer__author{
+		display: -webkit-box;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		        justify-content: center;
 		padding: 20px 0;
 	}
 	.author__mail{
