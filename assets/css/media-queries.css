@@ -29,6 +29,7 @@ and (max-width : 551px){
 	}
 	.logo,.news_suptitle,.news_title{
 		margin-top: 0;
+		height: initial;
 	}
 	.control_direction,.header__news{
 		margin:0;

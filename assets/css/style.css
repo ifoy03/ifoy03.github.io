@@ -159,6 +159,7 @@ a
 .logo_img
 {
     width: 60px;
+    height: auto;
 }
 .logo_title
 {
