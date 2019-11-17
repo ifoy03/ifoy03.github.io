@@ -10,10 +10,30 @@
 
   gtag('config', 'UA-152596592-1');
 </script>
+ 
+	<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	<!-- Favicon -->
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<title>Document</title>
+	<title>CEDA Studio</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/fonts.css">
 	<link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -27,30 +47,31 @@
 				<div class="header__inner"> <!-- Header inner -->
 					<div class="header__column">
 						<div class="logo">
-							<h1 class="logo_title"><a href="cedastudio.com" class="logo_title">cedastudio</a></h1>
-							<span class="logo_subtitle"><a href="cedastudio.com" class="logo_subtitle">web developement</a></span>
+							<div class="logo_image">
+								<a href="www.cedastudio.com" class="logo_title"><img src="assets/images/logo.svg" alt="eagle" class="logo_img"> <span class="logo_title_text">cedastudio</span></a>
+							</div>
+							<h1 class="logo_subtitle">
+								<a href="cedastudio.com" class="logo_subtitle">web developement</a>
+							</h1>
 						</div>
+						<!-- For small width -->
 						<div class="header__title-image"><img src="assets/images/header.jpg" alt="#" class="header__title-img"></div>
+						<!-- /For small width -->
 						<div class="header__news">
 							<div class="news__content">
 								<p class="news_suptitle">Мы веб Разработчики</p>
 								<p class="news_title">Добро Пожаловать</p>
 								<p class="news_text">
-								  Здесь бывают чудеса.Делают все как надо и красиво.Понимаю все с первого раза.
+								  Здесь бывают чудеса.Делают все как надо и красиво.Понимают все с первого раза.
 								</p>
+								<button class="about__us__button btn" onclick="popup()">Подать Заявку</button>
 							</div>
 						</div>
 						</div>
 						<div class="header__column">
 							<div class="header_image"><img src="assets/images/header.jpg" alt="#" class="header_img">
 						  </div>
-				  	</div>
-					<div class="down_to">
-						<a href="#services" class="down_to-link" id="down_circle"><span class="circle">
-							<span class="circle-arrow litle-arrow"></span>
-							<span class="circle-arrow big-arrow"></span></span>
-						</a>
-					</div>	
+				  	</div>	
 			  </div> <!-- /Header inner -->
 			</div>
 		</header> <!-- /Header -->
@@ -59,60 +80,86 @@
 					<h2 class="about-us__title">Наши Услуги</h2>
 					<p class="about-us__subtitle">24/7</p>
 						<div class="skills">
+								<!-- Row -->
 							<div class="skills__row">
 								<div class="skills__item">
 									<div class="skills__content">
 									<span class="skills__ico"><i class="fas fa-magic"></i></span>
-									<p class="skills__title">front-end</p>
-									<p class="skills__info">HTML+CSS+JS кодирование дизайнов любой сложности</p>
+									<p class="skills__title">Landing Page</p>
+									<p class="skills__info">Одностраничный продающий сайт для Ваших товаров и услуг</p>
 									</div>
-									<button class="about__us__button btn" onclick="popup()">Узнать больше</button>
 								</div>
 								<div class="skills__item">
 									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-puzzle-piece"></i></span>
-									<p class="skills__title">web программирование</p>
-									<p class="skills__info">Создание различных web-приложений</p>
-									</div>
-									<button class="about__us__button btn" onclick="popup()">Узнать больше</button>
+									<span class="skills__ico"><i class="fas fa-id-card"></i></span>
+									<p class="skills__title">Сайт Визитка</p>
+									<p class="skills__info">Компактный сайт со всей информацией о Вашей компании</p>
+									</div>	
 								</div>
 								<div class="skills__item">
 									<div class="skills__content">
-									<span class="skills__ico"><i class="fab fa-wordpress"></i></span>
-									<p class="skills__title">wordpress</p>
-									<p class="skills__info">Разработка сайтов - от блога до интернет магазина</p>
+									<span class="skills__ico"><i class="fas fa-user-tie"></i></span>
+									<p class="skills__title">Бизнес сайт</p>
+									<p class="skills__info">Сайт для привлечения и полноценной работы с Вашими клиентами</p>
 									</div>
-									<button class="about__us__button btn" onclick="popup()">Узнать больше</button>
-								</div>
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="far fa-question-circle"></i></span>
-									<p class="skills__title">консултация</p>
-									<p class="skills__info">Готов делиться своим опытом с заинтересованным клиентом</p>
-									</div>
-									<button class="about__us__button btn" onclick="popup()">Узнать больше</button>
 								</div>
 							</div>
+									<!-- /Row -->
+
+									<!-- Row -->
+							<div class="skills__row">
+								<div class="skills__item">
+									<div class="skills__content">
+									<span class="skills__ico"><i class="fas fa-shopping-basket"></i></span>
+									<p class="skills__title">Интернет Магазин</p>
+									<p class="skills__info">Возможность принимать заказы и соверщать онлайн проажи Ваших товаров</p>
+									</div>
+								</div>
+								<div class="skills__item">
+									<div class="skills__content">
+									<span class="skills__ico"><i class="fas fa-users"></i></i></span>
+									<p class="skills__title">Контекстная Реклама</p>
+									<p class="skills__info">Настройка контекстной рекламы Google/Yandex для привлечения трафика на Ваш сайт</p>
+									</div>
+								</div>
+								<div class="skills__item">
+									<div class="skills__content">
+									<span class="skills__ico"><i class="fas fa-search-dollar"></i></span>
+									<p class="skills__title">Таргетинговая Реклама</p>
+									<p class="skills__info">Настройка таргетинговой рекламы Facebook/Instagram/VK</p>
+									</div>
+								</div>
+							</div>
+							<div class="services__btn"> <button class="about__us__button btn" onclick="popup()">заказать</button></div>
+									<!-- /Row -->
+
 			</div>
 		</div>
-		</section> <!-- /Request -->
-		<section class="about_us" id="us_info"> <!-- About us -->
+		</section> 
+									<!-- /Request -->
+
+									<!-- About us -->
+		<section class="about_us" id="us_info"> 
 			<div class="container--small">
 				<div class="about-us__body">
 					<div class="about-us__content">
 						<h2 class="about-us__title">Почему именно мы ?</h2>
 						<p class="about-us__subtitle">Про нас</p>
 						<div class="about-us__info">
-							<div class="about-us__info__image"><img src="assets/images/about-us-choise.png" alt="#" class="about-us__info__img"></div><div class="clearfix"></div>
-							<div class="about-us__info__text"><p class="about-us__info__text"> Мы супер герой которые воплощают мечты в жизнь, ваше удовольствие первыше всего, мы те которые любим свою работу.<a id="dotsMore" class="three-dots hidden comment__text" href="javascript://0" onclick="textMore()">...</a>Делаем свою работу качественно и по нраву, честны и компетентны, делаем все за короткий срок, но самое главное, делаем это качественно.<span class="hidden-text" id="txtMore"> </span><a href="javascript://0" onclick="hiden()" id="hidden_moreText" class="comment__text hidden">Скрыть</a></p></div>
+							<div class="about-us__info__image"><img src="assets/images/about_us.jpg" alt="#" class="about-us__info__img"></div>
+							<div class="about-us__info__text"><p class="about-us__info__text"> Мы супер герой которые воплощают мечты в жизнь, ваше удовольствие превыше всего, мы те которые любим свою работу.Делаем свою работу качественно и по нраву, честны и компетентны, делаем все за короткий срок, но самое главное, делаем это качественно.</p></div>
 
 						</div>
 						
 					</div>
 				</div>
 			</div>
-		</section> <!-- /About us -->
-		<section class="portfolio" id="works"> <!-- Portfolio -->
+		</section> 
+								<!-- /About us -->
+
+
+								<!-- Portfolio -->
+		<section class="portfolio" id="works"> 
 			<div class="container">
 				<h2 class="about-us__title">Наши работы</h2>
 				<div class="portfolio__row">
@@ -171,8 +218,13 @@
 							<button class="about__us__button btn" onclick="popup()">заказать</button>
 				</div>
 			</div>
-		</section> <!-- Portfolio -->
-		<section class="reviews" id="comment"> <!-- Reviews -->
+		</section> 
+
+
+						<!-- /Portfolio -->
+
+						<!-- Reviews -->
+		<section class="reviews" id="comment"> 
 			<div class="container container--reviews">
 				<div class="reviews__content">
 					<div class="reviews__content__title">
@@ -240,30 +292,56 @@
 					</div>	
 				</div>
 			</div>
-		</section> <!-- /Reviews -->
-		<div class="prefooter" id="mail_form"> <!-- Prefooter -->
+		</section> 
+
+								<!-- /Reviews -->
+
+								<!-- Prefooter -->
+		<div class="prefooter" id="mail_form"> 
 			<div class="container--small">
 				<div class="request__form">
 						<p class="form__title">Подать Заявку</p>
 						<p class="form__text">Мы живем своей работой, мы те кто сбывает мечты, быстро найдем общий язык и будем стремится к общим <span class="form__atention"> целям!</span> </p>
 						<form action="mail.php" method="POST" class="form">
-							<input type="text" class="form__mail" placeholder="Введите вашу почту" name="user_mail"><button type="submit" class="form__submit" name="Отправка">Отправить</button>
+							<input type="text" class="form__mail" placeholder="Как вас зовут?" name="user_name">
+							<input type="tel" class="form__mail" placeholder="Введите ваш номер" name="user_phone">
+							<button type="submit" class="form__submit" name="Отправка">Отправить</button>
 						</form>
+
 						<!-- Popup -->
+
 						<div class="popup"  id="pop_up">
 							<div class="popup_content">
+								<div class="popup_wrapper">
 								<p class="popup__title">подать заявку</p>
 								<form action="mail.php" method="POST" class="form form__popup">
 										<input type="text" name="user_name" placeholder="Введите ваше имя" class="form__mail mail__popup">
-										<input type="email" name="user_mail" placeholder="Введите вашу почту" class="form__mail mail__popup">
-										<input type="number" name="user_phone" placeholder="Введите ваш номер" class="form__mail mail__popup">
+										<input type="tel" name="user_phone" placeholder="Введите ваш номер" class="form__mail mail__popup">
+										 <div class="dropdown">
+								        <div class="select">
+								          <span>Выберите услугу</span>
+								          <i class="fa fa-chevron-left"></i>
+								        </div>
+								        <input type="hidden" name="gender">
+								        <ul class="dropdown-menu">
+								          <li id="landing_page">Landing Page</li>
+								          <li id="site_card">Сайт Визитка</li>
+								          <li id="site_bussines">Бизнес Сайт</li>
+								          <li id="site_shop">Интернет Магазин</li>
+								          <li id="context_advertisment">Контекстная Реклама</li>
+								          <li id="triger_advertisment">Таргетинговая Реклама</li>
+								        </ul>
+    								  </div>
 										<button type="submit" name="send" class="form__submit submit__popup">Отправить</button>
+
 								</form>
-									<button class="popup_close" id="popup_btn_close" onclick="popup_close()">X</button>
-							
+									<button class="popup_close" id="popup_btn_close">закрыть</button>
+								</div>
 							</div>
 						</div>
+
 						<!-- /Popup -->
+
 					</div>
 					<div class="feedback">
 						<div class="feedback__items">
@@ -282,8 +360,11 @@
 						</div>
 					</div>
 			</div>
-		</div> <!-- /Prefooter -->
-		<footer class="footer"> <!-- Footer -->
+		</div> 
+								<!-- /Prefooter -->
+
+								<!-- Footer -->
+		<footer class="footer"> 
 			<div class="container--small">
 				<div class="footer__body">
 					<div class="footer__content">
@@ -297,15 +378,22 @@
 					</div>
 				</div>
 			</div>
-		</footer> <!-- /Footer -->
-		<div class="footer__author"> <!-- Authors -->
+		</footer> 
+							<!-- /Footer -->
+
+							<!-- Authors -->
+		<div class="footer__author"> 
 				<a href="mailto:" class="author__mail"><i class="fas fa-envelope"></i></a>
 				<p class="author">&copy; 2019 cedastudio</p>
-		</div> <!-- Authors -->
+		</div> 
+							<!-- Authors -->
 		<div class="scroll">
 				<a class="scroll_ico" href="#home"><i class="fas fa-arrow-up"></i></a>
-		</div>
-	</div>	<!-- /Page -->
+		</div>				
+	</div>	
+
+	<!-- /Page -->
+
 	<script src="assets/js/jquery-3.4.1.min.js"></script>
 	<script src="assets/js/script.js"></script>
 </body> <!-- /Body -->

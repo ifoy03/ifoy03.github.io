@@ -1,11 +1,11 @@
 
 			/* Header */
 @media only screen and (max-width: 1000px){
-	.circle,.down_to{
-		display: none;
-	}
 	.header__news{
 		margin-top: 100px;
+	}
+	.logo_title{
+		justify-content: center;
 	}
 }
 @media only screen 
@@ -51,12 +51,18 @@ and (max-width : 701px){
 	.container--small{
 		max-width: 550px;
 	}
+	.logo{
+		margin-top: 0;
+	}
 	.header_img{
 		display: none;
 	}
 	.header__column:first-child{
 		width: 100%;
 		text-align: center;
+	}
+	.header__column:last-child{
+		display: none;
 	}
 	.header__news{
 		margin-top: 80px;
@@ -77,6 +83,12 @@ and (max-width : 851px){
 	.control_direction{
 		margin:0;
 	}
+	.header__column:first-child{
+		width: 100%;
+	}
+	.logo_title{
+		justify-content: initial;
+	}
 }
 @media only screen and (min-width: 851px) and (max-width: 920px){
 	.container{
@@ -84,6 +96,12 @@ and (max-width : 851px){
 	}
 	.container--small{
 		max-width: 700px;
+	}
+	.header__column:first-child{
+		width: 100%;
+	}
+	.logo_title{
+		justify-content: initial;
 	}
 }
 @media only screen and (min-width: 920px) and (max-width: 1000px){
@@ -93,6 +111,12 @@ and (max-width : 851px){
 	.container--small{
 		max-width: 800px;
 	}
+	.header__column:first-child{
+		width: 100%;
+	}
+	.logo_title{
+		justify-content: initial;
+	}
 }
 @media only screen and (min-width: 1000px) and (max-width: 1130px){
 	.container{
@@ -100,6 +124,15 @@ and (max-width : 851px){
 	}
 	.container--small{
 		max-width: 960px;
+	}
+	.header__news{
+		margin-top: 100px;
+	}
+	.header__column:first-child{
+		width: 100%;
+	}
+	.logo_title{
+		justify-content: initial;
 	}
 }
 @media only screen and (min-width: 1130px) and (max-width: 1240px){
@@ -109,6 +142,15 @@ and (max-width : 851px){
 	.container--small{
 		max-width: 1000px;
 	}
+	.header__column:first-child{
+		width: 100%;
+	}
+	.logo_title{
+		justify-content: initial;
+	}
+	.header__news{
+		margin-top: 100px;
+	}
 }
 		/* About us */
 @media only screen and (max-width: 1000px){
@@ -117,6 +159,7 @@ and (max-width : 851px){
 	}
 	.about-us__info__text{
 		text-align: center;
+		margin-left: 0;
 	}
 }
 
@@ -173,9 +216,11 @@ and (max-width : 851px){
 	.about-us__info__image{
 		display: none;
 	}
+	.about-us__info__text{
+		text-align: center;
+		margin-left: 0;
+	}
 }
-
-
 		/* Request > skills */
 
 @media only screen and (max-width: 1000px){
@@ -187,6 +232,9 @@ and (max-width : 851px){
 	}
 	.skills__item{
 		margin: 0 auto 120px;
+	}
+	.skills__item:last-child{
+		margin-bottom: 80px;
 	}
 }
 
