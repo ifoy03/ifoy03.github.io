@@ -156,11 +156,7 @@ a
 
     letter-spacing: 4.4px;
 }
-.logo_img
-{
-    width: 60px;
-    height: 60px;
-}
+
 .logo_title
 {
     font-family: 'Times New Roman',sans-serif;
@@ -489,6 +485,7 @@ a
 }
 .user__img
 {
+    border-radius: 100%;
     width: 60px;
     height: 60px;
 }
