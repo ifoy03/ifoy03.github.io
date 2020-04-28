@@ -2,394 +2,650 @@
 <html lang="ru" id="all">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<title>CEDA Studio</title>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152596592-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-152596592-1');
-</script>
- 
-	<!-- Favicon -->
-		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets/images/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-	<!-- Favicon -->
-
-	
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/fonts.css">
-	<link rel="stylesheet" href="assets/css/fontawesome.css">
-	<link rel="stylesheet" href="assets/css/all.css">
-	<link rel="stylesheet" href="assets/css/media-queries.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Дома и бани из бруса, каркасные дома под ключ от компании Своя Дача: высокое качество по низким ценам.">
+	<title>
+	Дома и бани из бруса, каркасные дома под ключ от компании Своя Дача: высокое качество по низким ценам.
+	</title>
+	<link rel="stylesheet" href="fonts/main.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/adaptive.css">
+	<script src="src/jquery-3.5.0.min.js" defer></script>
+	<script src="src/main.js" defer></script>
 </head>
-<body > <!-- Body -->
-	<div class="page">
-		<header class="header" id="home"> <!-- Header -->
-			<div class="container">
-				<div class="header__inner"> <!-- Header inner -->
-					<div class="header__column">
-						<div class="logo">
-							<div class="logo_image">
-								<a href="www.cedastudio.com" class="logo_title"><span class="logo_title_text">cedastudio</span></a>
-							</div>
-							<h1 class="logo_subtitle">
-								<a href="cedastudio.com" class="logo_subtitle">web developement</a>
-							</h1>
-						</div>
-						<!-- For small width -->
-						<div class="header__title-image"><img src="assets/images/header.jpg" alt="#" class="header__title-img"></div>
-						<!-- /For small width -->
-						<div class="header__news">
-							<div class="news__content">
-								<p class="news_suptitle">Мы веб Разработчики</p>
-								<p class="news_title">Добро Пожаловать</p>
-								<p class="news_text">
-								  Здесь бывают чудеса.Делают все как надо и красиво.Понимают все с первого раза.
-								</p>
-								<button class="about__us__button btn" onclick="popup()">Подать Заявку</button>
-							</div>
-						</div>
-						</div>
-						<div class="header__column">
-							<div class="header_image"><img src="assets/images/header.jpg" alt="#" class="header_img">
-						  </div>
-				  	</div>	
-			  </div> <!-- /Header inner -->
+<body>
+	<main class="page">
+	<!-- Popup -->
+	<div class="popup" id="pop_up">
+	<div class="popup_content">
+		<h2 class="popup__title">Заявка на строительство</h2>
+		<form action="">
+				<input name="calculate-name" type="text" value="" class="form__item" required="" placeholder="Ваше имя" x-autocompletetype="name">
+				<input name="calculate-phone" type="text" value="" class="form__item" required="" placeholder="Ваш номер телефона" x-autocompletetype="tel">
+				<input name="calculate-email" type="email" value="" class="form__item" placeholder="*Введите Ваш email" required="" x-autocompletetype="email">
+				<input type="file" name="calcProjFile[]" multiple="" value="1" size="40" class="file-request" aria-invalid="false">
+				<textarea name="calculate-message" rows="3" class="form__item form--popup form__question" required="" placeholder="*Комментарий к заказу"></textarea>
+			<input type="submit" class="form__submit number__btn form__item" value="Получить консультацию">
+		</form>
+		<button class="popup_close" id="popup_btn_close">закрыть</button>
+	</div>
+</div>
+<header class="header" id="top">
+
+	<nav class="navbar">
+		<div class="container container--nav">
+			<div class="wrapper wrapper--block">
+				<a href="index.html" class="logo__link" title="Строительство домов из бруса - СК Своя Дача">
+					<img src="images/logo.png" alt="#" class="logo">
+				</a>
+				<div class="navbar__adaptiveLinks">
+					<div class="nav__burgerMenu">
+						<a href="javascript://0" class="burgerMenu__link ">
+							<p class="burgerMenu--line"></p>
+						</a>
+					</div>
+					<a href="mailto:" class="navbar__adaptiveItem">	
+						<span class="navbar__adaptiveItem--cont adaptiveItem--tell"></span>
+					</a>
+					<a href="tel:37360142768" class="navbar__adaptiveItem">
+						<span class="navbar__adaptiveItem--cont adaptiveItem--mail"></span>
+					</a>
+
+				</div>
+			<div class="clearfix"></div>
+			<div class="nav__collapse">
+				<ul class="nav__collapse__list">
+					<li class="list__item">
+						<a href="javascript://0" class="list__link collapse__btn">о компании<span class="caret"></span></a>
+						
+						<ul class="nav__collapse__menu">
+							<li class="collapse__menu__item">
+								<a href="o-kompanii.html" class="collapse__menu__link">о компаний</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">доставка</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">оплата</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">отзывы клиентов</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">кредитование</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list__item">
+						<a href="javascript://0" class="list__link collapse__btn">строительство<span class="caret"></span></a>
+						<ul class="nav__collapse__menu">
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">дом из бруса</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">каркасные дома</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">бани из бруса</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">фундаменты</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">печи для бань</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list__item">
+						<a href="javascript://0" class="list__link collapse__btn">наши работы<span class="caret"></span></a>	
+						<ul class="nav__collapse__menu">
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">готовые дома</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">фотоотчеты</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list__item">
+						<a href="contacts.html"  class="list__link">контакты</a>
+					</li>
+				</ul>
 			</div>
-		</header> <!-- /Header -->
-		<section class="request" id="services"> <!-- Request -->
-			<div class="container--small">
-					<h2 class="about-us__title">Наши Услуги</h2>
-					<p class="about-us__subtitle">24/7</p>
-						<div class="skills">
-								<!-- Row -->
-							<div class="skills__row">
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-magic"></i></span>
-									<p class="skills__title">Landing Page</p>
-									<p class="skills__info">Одностраничный продающий сайт для Ваших товаров и услуг</p>
-									</div>
-								</div>
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-id-card"></i></span>
-									<p class="skills__title">Сайт Визитка</p>
-									<p class="skills__info">Компактный сайт со всей информацией о Вашей компании</p>
-									</div>	
-								</div>
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-user-tie"></i></span>
-									<p class="skills__title">Бизнес сайт</p>
-									<p class="skills__info">Сайт для привлечения и полноценной работы с Вашими клиентами</p>
-									</div>
-								</div>
-							</div>
-									<!-- /Row -->
+			<div class="nav__contacts">
+				<div class="contacts__mail__block contacts__blocks">
+					<a href="mailto:mail@svodacha.ru" class="contacts__link--mail contacts__link">mail@svodacha.ru</a>
+					<button class="mail__btn contacts__btn" onclick="popup()">рассчитать проект</button>
+				</div>
+				<div class="contacts__number__block contacts__blocks">
+					<a href="tel:8-800-707-13-44" class="contacts__link--number contacts__link">8-800-707-13-44</a>
+					<button class="number__btn contacts__btn" onclick="popup()">заказать звонок</button>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+		
+	</nav>
 
-									<!-- Row -->
-							<div class="skills__row">
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-shopping-basket"></i></span>
-									<p class="skills__title">Интернет Магазин</p>
-									<p class="skills__info">Возможность принимать заказы и соверщать онлайн проажи Ваших товаров</p>
-									</div>
-								</div>
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-users"></i></span>
-									<p class="skills__title">Контекстная Реклама</p>
-									<p class="skills__info">Настройка контекстной рекламы Google/Yandex для привлечения трафика на Ваш сайт</p>
-									</div>
-								</div>
-								<div class="skills__item">
-									<div class="skills__content">
-									<span class="skills__ico"><i class="fas fa-search-dollar"></i></span>
-									<p class="skills__title">Таргетинговая Реклама</p>
-									<p class="skills__info">Настройка таргетинговой рекламы Facebook/Instagram/VK</p>
-									</div>
-								</div>
-							</div>
-							<div class="services__btn"> <button class="about__us__button btn" onclick="popup()">заказать</button></div>
-									<!-- /Row -->
 
+	<div class="header__content">
+		<div class="header__text">
+			<h1 class="header__title">Строительство деревянных<br>домов и бань</h1>
+			<p class="header__subtitle">Строительная компания СВОЯ ДАЧА осуществляет строительство домов и бань под ключ из профилированного бруса и по каркасной технологии по всей России с использованием северного леса Вологодской области.</p>
+		</div>
+		<div class="header__button">
+			<button class="header__btn mail__btn" onclick="popup()">Получить консультацию</button>
+	</div>
+	</div>
+	
+</header>
+
+<!-- Header -->
+
+<!-- Section -->
+<section class="readyProjects">
+	<div class="container">
+	<h2 class="readyProjects__title">Готовые проекты домов и бань</h2>
+	<h3 class="readyProjects__subtitle">Выберите свой проект из каталога наших домов и бань:</h3>
+	<div class="wrapper">
+	  <div class="readyProjects__image">
+			<div class="readyProjects__content">
+				<a href="#" class="readyProjects__link">
+					<p class="readyProjects__imgText">дома и бруса</p>
+					<img src="images/house_1.jpg" alt="3" class="readyProjects__img">
+				</a>
 			</div>
 		</div>
-		</section> 
-									<!-- /Request -->
-
-									<!-- About us -->
-		<section class="about_us" id="us_info"> 
-			<div class="container--small">
-				<div class="about-us__body">
-					<div class="about-us__content">
-						<h2 class="about-us__title">Почему именно мы ?</h2>
-						<p class="about-us__subtitle">Про нас</p>
-						<div class="about-us__info">
-							<div class="about-us__info__image"><img src="assets/images/about_us.jpg" alt="#" class="about-us__info__img"></div>
-							<div class="about-us__info__text"><p class="about-us__info__text"> Мы супер герой которые воплощают мечты в жизнь, ваше удовольствие превыше всего, мы те которые любим свою работу.Делаем свою работу качественно и по нраву, честны и компетентны, делаем все за короткий срок, но самое главное, делаем это качественно.</p></div>
-
-						</div>
-						
-					</div>
+		<div class="readyProjects__image">
+			<div class="readyProjects__content">
+				<a href="#" class="readyProjects__link">
+					<p class="readyProjects__imgText">каркасные дома</p>
+					<img src="images/house_2.jpg" alt="3" class="readyProjects__img">
+				</a>
+			</div>
+		</div>
+		<div class="readyProjects__image">
+			<div class="readyProjects__content">
+				<a href="#" class="readyProjects__link">
+					<p class="readyProjects__imgText">бани из бруса</p>
+					<img src="images/house_3.jpg" alt="3" class="readyProjects__img">
+				</a>
+			</div>
+		</div>
+	</div>
+ </div>
+</section>
+<!-- /Section -->
+<!-- Section -->
+<section class="popularProjects">
+	<div class="container">
+		<h2 class="readyProjects__title">Популярные проекты домов и бань</h2>
+		<div class="popularProjects__card">
+		 <div class="wrapper">
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
 				</div>
 			</div>
-		</section> 
-								<!-- /About us -->
-
-
-								<!-- Portfolio -->
-		<section class="portfolio" id="works"> 
-			<div class="container">
-				<h2 class="about-us__title">Наши работы</h2>
-				<div class="portfolio__row">
-					<div class="portfolio__items">
-						<div class="portfolio__item">
-							<div class="portfolio__content">
-								<p class="portfolio__title">promo site</p>
-								
-							</div>
-							<div class="portfolio__image"><img src="assets/images/work-1.jpg" alt="" class="portfolio__img"></div>
-						</div>
-						<div class="portfolio__item portfolio__item-hidden">
-							<div class="portfolio__content">
-									<p class="portfolio__title">promo site</p>
-									
-							</div>
-							<div class="portfolio__image"><img src="assets/images/work-1.jpg" alt="" class="portfolio__img"></div>
-						</div>
-						<div class="portfolio__item portfolio__item-hidden">
-							<div class="portfolio__content">
-								<p class="portfolio__title">promo site</p>
-								
-							</div>
-							<div class="portfolio__image"><img src="assets/images/work-1.jpg" alt="" class="portfolio__img"></div>
-						</div>
-						
-					</div>
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
 				</div>
-				<div class="portfolio__row portfolio__row--hidden">
-					<div class="portfolio__items">
-						<div class="portfolio__item portfolio__item-hidden">
-							<div class="portfolio__content">
-								<p class="portfolio__title">promo site</p>
-								
-							</div>
-							<div class="portfolio__image"><img src="assets/images/work-1.jpg" alt="" class="portfolio__img"></div>
-						</div>
-						<div class="portfolio__item portfolio__item-hidden">
-							<div class="portfolio__content">
-								<p class="portfolio__title">promo site</p>
-								
-							</div>
-							<div class="portfolio__image"><img src="assets/images/work-1.jpg" alt="" class="portfolio__img"></div>
-						</div>
-						<div class="portfolio__item portfolio__item-hidden">
-							<div class="portfolio__content">
-								<p class="portfolio__title">promo site</p>
-								
-							</div>
-							<div class="portfolio__image"><img src="assets/images/work-1.jpg" alt="" class="portfolio__img"></div>
-						</div>
-						
-					</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
 				</div>
-				<div class="about__us__button">
-							<button class="about__us__button btn" onclick="popup()">заказать</button>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
 				</div>
 			</div>
-		</section> 
-
-
-						<!-- /Portfolio -->
-
-						<!-- Reviews -->
-		<section class="reviews" id="comment"> 
-			<div class="container container--reviews">
-				<div class="reviews__content">
-					<div class="reviews__content__title">
-						<span class="quotes"><i class="fas fa-quote-left"></i></span>
-						<h2 class="reviews__title">Отзывы</h2>
-					</div>
-					<div class="reviews__content__comments">
-						<div class="reviews__content__comments__items">
-							<div class="reviews__content__comments__item">
-								<div class="comment__reviews">
-									<div class="comment__block d33">
-										<div class="comment__block__inner">
-											<p class="comment__text">Если эти ребята берут проект. Они доводят его до конца и в сроки!С нашей стороны, по ходу разработки, были добавлены ряд изменений и дополнений.Никаких доплат не было взято. Все четко и в сроки. Команда профессионалов!
-												Рекомендую.
-											</p>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star"><i class="fas fa-star"></i></span>
-										</div>
-									</div>
-								</div>
-								<div class="comment__user">
-									<div class="user__foto"><a class="user__link" href="#"><img src="assets/images/com_user-1.jpg" alt="user_1" class="user__img"><p class="user__name">Михаил Галутвин</p></a></div>							
-								</div>
-							</div>
-							<div class="reviews__content__comments__item">
-								<div class="comment__reviews">
-									<div class="comment__block d33">
-										<div class="comment__block__inner">
-											<p class="comment__text">
-												CEDA Studio отлично справились с задачей! Они сделали адаптивную верстку для моего сайта, разработали план по анимации абсолютно всех графических элементов дизайна, а после его согласования план реализовали.
-											</p>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-										</div>
-									</div>
-								</div>
-								<div class="comment__user">
-									<div class="user__foto"><a class="user__link" href="#"><img src="assets/images/com_user-2.jpg" alt="user_1" class="user__img"><p class="user__name">Александр Фролов</p></a></div>							
-								</div>
-							</div>
-							<div class="reviews__content__comments__item">
-								<div class="comment__reviews">
-									<div class="comment__block d33">
-										<div class="comment__block__inner">
-											<p class="comment__text">Мы работаем не над первым проектом. За все время к качеству работ и соблюдению сроков претензий нет. Отличная, чистая верстка и все точно в срок. Приятно то, что Александр может сделать не входящие в первоначально ТЗ доработки/изменения.</p>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star comment__star--active"><i class="fas fa-star"></i></span>
-											<span class="comment__star"><i class="fas fa-star"></i></span>
-										</div>
-									</div>
-								</div>
-								<div class="comment__user">
-									<div class="user__foto"><a class="user__link" href="#"><img src="assets/images/com_user-3.jpg" alt="user_1" class="user__img"><p class="user__name">Андрей Маликов</p></a></div>							
-								</div>
-							</div>
-						</div>
-					</div>	
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
 				</div>
 			</div>
-		</section> 
-
-								<!-- /Reviews -->
-
-								<!-- Prefooter -->
-		<div class="prefooter" id="mail_form"> 
-			<div class="container--small">
-				<div class="request__form">
-						<p class="form__title">Подать Заявку</p>
-						<p class="form__text">Мы живем своей работой, мы те кто сбывает мечты, быстро найдем общий язык и будем стремится к общим <span class="form__atention"> целям!</span> </p>
-						<form action="mail.php" method="POST" class="form">
-							<input type="text" class="form__mail" placeholder="Как вас зовут?" name="user_name">
-							<input type="tel" class="form__mail" placeholder="Введите ваш номер" name="user_phone">
-							<button type="submit" class="form__submit" name="Отправка">Отправить</button>
-						</form>
-
-						<!-- Popup -->
-
-						<div class="popup"  id="pop_up">
-							<div class="popup_content">
-								<div class="popup_wrapper">
-								<p class="popup__title">подать заявку</p>
-								<form action="mail.php" method="POST" class="form form__popup">
-										<input type="text" name="user_name" placeholder="Введите ваше имя" class="form__mail mail__popup">
-										<input type="tel" name="user_phone" placeholder="Введите ваш номер" class="form__mail mail__popup">
-										 <div class="dropdown">
-								        <div class="select">
-								          <span>Выберите услугу</span>
-								          <i class="fa fa-chevron-left"></i>
-								        </div>
-								        <input type="hidden" name="gender">
-								        <ul class="dropdown-menu">
-								          <li id="landing_page">Landing Page</li>
-								          <li id="site_card">Сайт Визитка</li>
-								          <li id="site_bussines">Бизнес Сайт</li>
-								          <li id="site_shop">Интернет Магазин</li>
-								          <li id="context_advertisment">Контекстная Реклама</li>
-								          <li id="triger_advertisment">Таргетинговая Реклама</li>
-								        </ul>
-    								  </div>
-										<button type="submit" name="send" class="form__submit submit__popup">Отправить</button>
-
-								</form>
-									<button class="popup_close" id="popup_btn_close">закрыть</button>
-								</div>
-							</div>
-						</div>
-
-						<!-- /Popup -->
-
-					</div>
-					<div class="feedback">
-						<div class="feedback__items">
-							<div class="feedback__item">
-								<a href="www.facebook.com/cedastudio" class="feedback__link"><span class="feedback__icon"><i class="fab fa-facebook-f"></i></span></a>
-							</div>
-							<div class="feedback__item">
-								<a href="www.instagram.com/cedastudio" class="feedback__link"><span class="feedback__icon"><i class="fab fa-instagram"></i></span></a>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div> 
-								<!-- /Prefooter -->
-
-								<!-- Footer -->
-		<footer class="footer"> 
-			<div class="container--small">
-				<div class="footer__body">
-					<div class="footer__content">
-						<div class="footer__anchor">
-							<span class="anchor__item"><a href="#home" class="anchor__links">домой</a></span>
-							<span class="anchor__item"><a href="#us_info" class="anchor__links">про нас</a></span>
-							<span class="anchor__item"><a href="#works" class="anchor__links">портфолио</a></span>
-							<span class="anchor__item"><a href="#services" class="anchor__links">наши услуги</a></span>
-							<span class="anchor__item"><a href="#mail_form" class="anchor__links">заявка</a></span>
-						</div>
-					</div>
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
 				</div>
 			</div>
-		</footer> 
-							<!-- /Footer -->
+		</div>
+	 </div>
+	 <p class="afterCardsLink"><a class="link__hover">смотреть готовые дома</a></p>
+	</div>
+</section>
 
-							<!-- Authors -->
-		<div class="footer__author"> 
-				<a href="mailto:" class="author__mail"><i class="fas fa-envelope"></i></a>
-				<p class="author">&copy; 2019 cedastudio</p>
-		</div> 
-							<!-- Authors -->
-		<div class="scroll">
-				<a class="scroll_ico" href="#home"><i class="fas fa-arrow-up"></i></a>
-		</div>				
-	</div>	
+<!-- /Section -->
 
-	<!-- /Page -->
 
-	<script src="assets/js/jquery-3.4.1.min.js"></script>
-	<script src="assets/js/script.js"></script>
-</body> <!-- /Body -->
+
+<!-- Section -->
+
+<section class="popularProjects">
+	<div class="container">
+		<h2 class="readyProjects__title">Популярные проекты домов и бань</h2>
+		<div class="popularProjects__card">
+		 <div class="wrapper">
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
+				</div>
+			</div>
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
+				</div>
+			</div>
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
+				</div>
+			</div>
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
+				</div>
+			</div>
+		</div>
+	 </div>
+	 <p class="afterCardsLink"><a class="link__hover">смотреть готовые дома</a></p>
+	</div>
+</section>
+
+<!-- /Section -->
+
+
+<!-- Section -->
+
+<section class="popularProjects">
+	<div class="container">
+		<h2 class="readyProjects__title">Популярные проекты домов и бань</h2>
+		<div class="popularProjects__card">
+		 <div class="wrapper">
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
+				</div>
+			</div>
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
+				</div>
+			</div>
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
+				</div>
+			</div>
+			<div class="card__item">
+				<div class="card__header">
+					<img src="images/house_price.jpg" alt="3" class="card__img">
+				</div>
+				<div class="card__body">
+					<p class="card__title">Дом &lt;&lt;Зарайск>></p>
+					<p class="card__values"><span class="card__sizeArea">Площадь:</span><span class="card__areaValue card__value">60 м<sup>2</sup></span></p>
+					<p class="card__values"><span class="card__sizeArea">Размер:</span><span class="card__sizeValue card__value">6.5 х 6.5 м</span></p>
+					<p class="card__price">от 500 000 руб</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">подробнее</a>
+				</div>
+			</div>
+		</div>
+	 </div>
+	 <p class="afterCardsLink"><a class="link__hover">смотреть готовые дома</a></p>
+	</div>
+</section>
+
+<!-- /Section -->
+
+
+
+
+<!-- Section about company -->
+<section class="aboutCompany">
+	<div class="container">
+		<h2 class="readyProjects__title">Популярные проекты домов и бань</h2>
+		<div class="about__text">
+			<p>Наша компания предлагает строительство домов, бань и банных комплексов из дерева по доступным ценам. Мы работаем качественно и со вкусом, позволяя Вам полностью расслабиться и предоставить заботу о возведении дома настоящим профессионалам своего дела.</p>
+			<p>Наша компания достаточно давно работает на рынке, и многолетний опыт и высокая квалификация наших специалистов позволяет возводить красивые, добротные, а главное, бюджетные дома!</p>
+			<p>Наши мастера готовы построить для Вас дом, дачу или баню из профилированного бруса вне зависимости от сезона. Мы осуществляем строительство: по типовым проектам и по индивидуально разработанным проектам, <strong>«под отделку» и «под ключ»</strong>.</p>
+			<p>За годы нашей плодотворной работы мы научились вести строительство по отлаженным технологиям за минимальные сроки. Конечно, длительность застройки объекта зависит от сложности проекта, но, зачастую, это занимает <strong>от 1 до 3 недель</strong>.</p>
+			<p>Если у Вас есть свой проект, присылайте его нам на <strong>бесплатный индивидуальный расчет</strong>:</p>
+			<button class="about__btn header__btn"><span class="about__btn__icon"></span> рассчитать проект</button>
+		</div>
+	</div>
+</section>
+
+<!-- /Section about company -->
+
+<!-- Section advantages -->
+
+<section class="advantages">
+	<div class="container">
+		<h2 class="readyProjects__title">Преимущества компании Своя Дача</h2>
+		<div class="wrapper advantages__wrapper">
+			<div class="advantages__item">
+				<img src="images/2-forest.jpg" alt="3">
+				<p class="advantages__title">Собственное производство</p>
+				<p class="advantages__text">Мы сами отбираем и обрабатываем древесину</p>
+			</div>
+			<div class="advantages__item">
+				<img src="images/2-forest.jpg" alt="3">
+				<p class="advantages__title">Собственное производство</p>
+				<p class="advantages__text">Мы сами отбираем и обрабатываем древесину</p>
+			</div>
+			<div class="advantages__item">
+				<img src="images/2-forest.jpg" alt="3">
+				<p class="advantages__title">Собственное производство</p>
+				<p class="advantages__text">Мы сами отбираем и обрабатываем древесину</p>
+			</div>
+		</div>
+		<div class="wrapper advantages__wrapper">
+			<div class="advantages__item">
+				<img src="images/2-forest.jpg" alt="3">
+				<p class="advantages__title">Собственное производство</p>
+				<p class="advantages__text">Мы сами отбираем и обрабатываем древесину</p>
+			</div>
+			<div class="advantages__item">
+				<img src="images/2-forest.jpg" alt="3">
+				<p class="advantages__title">Собственное производство</p>
+				<p class="advantages__text">Мы сами отбираем и обрабатываем древесину</p>
+			</div>
+			<div class="advantages__item">
+				<img src="images/2-forest.jpg" alt="3">
+				<p class="advantages__title">Собственное производство</p>
+				<p class="advantages__text">Мы сами отбираем и обрабатываем древесину</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- /Section advantages -->
+
+<!-- Section examples -->
+
+<section class="examples">
+	<div class="container">
+		<h2 class="examples__title">Примеры наших работ</h2>
+		<div class="examples__images">
+			<div class="wrapper">
+				<div class="examples__item">
+					<img src="images/svodacha-works-12-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+				<div class="examples__item">
+					<img src="images/svodacha-works-24-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+				<div class="examples__item">
+					<img src="images/svodacha-works-27-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="examples__item">
+					<img src="images/svodacha-works-28-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+				<div class="examples__item">
+					<img src="images/svodacha-works-30-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+				<div class="examples__item">
+					<img src="images/svodacha-works-35-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="examples__item">
+					<img src="images/svodacha-works-38-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+				<div class="examples__item">
+					<img src="images/svodacha-works-41-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+				<div class="examples__item">
+					<img src="images/svodacha-works-42-400x300.jpg" alt="3" class="examples__item examples__img">
+				</div>
+			</div>
+		</div>
+	</div>
+		<p class="afterCardsLink examples__link"><a class="link__hover">смотреть готовые дома</a></p>
+		<p class="afterCardsLink examples__link"><a class="link__hover">смотреть фотоотчеты</a></p>
+</section>
+
+<!-- /Section examples -->
+
+<section class="reviews">
+	<div class="container">
+		<h2 class="examples__title">Отзывы наших клиентов</h2>
+		<div class="wrapper advantages__wrapper">
+			<div class="reviews__videos">
+				<iframe width="350" height="240" src="https://www.youtube.com/embed/YXc3SEcadno" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+				<iframe width="350" height="240" src="https://www.youtube.com/embed/YXc3SEcadno" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+				<iframe width="350" height="240" src="https://www.youtube.com/embed/YXc3SEcadno" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+		</div>
+		<div class="wrapper advantages__wrapper reviews__wrapper">
+			<div class="reviews__image">
+				<a href="#" class="reviews__link">
+					<img src="images/otzyv-mila-spb-140kv.jpg" alt="3" class="reviews__img">
+				</a>
+			</div>
+			<div class="reviews__image">
+				<a href="#" class="reviews__link">
+					<img src="images/otzyv-mila-spb-140kv.jpg" alt="3" class="reviews__img">
+				</a>
+			</div>
+			<div class="reviews__image">
+				<a href="#" class="reviews__link">
+					<img src="images/otzyv-mila-spb-140kv.jpg" alt="3" class="reviews__img">
+				</a>
+			</div>
+			
+		</div>
+		<p class="afterCardsLink"><a class="link__hover">смотреть другие отзывы</a></p>
+	</div>
+</section>
+
+<section class="consultation">
+	<div class="container">
+		<h2 class="readyProjects__title consultation__title">Получить бесплатную консультацию</h2>
+		<div class="wrapper">
+			<div class="consultation__consultant">
+				<img src="images/consultant.png" alt="3" class="consultant__img">
+				<p class="consultant__job">инженер-консультант</p>
+				<p class="consultant__name">Михаил Андреев</p>
+			</div>
+			<div class="consultation__contacts">
+				<div class="consultation__number">
+					<p class="consultation__number__text">Консультация специалиста по телефону:</p>
+					<a href="tel:8-800-707-13-44" class="consultation__numberText consultation__link">8-800-707-13-44</a>
+					<p class="consultation__number__subtext">Бесплатный звонок по всей России</p>
+				</div>
+				<div class="consultation__mail">
+					<p class="consultation__mail__text">Или пишите нам на почту:</p>
+					<a href="mailto:mail@svodacha.ru" class="consultation__mail__link consultation__link">mail@svodacha.ru</a>
+				</div>
+			</div>
+			<div class="consultation__form">
+				<p class="consultation__title">
+					Или используйтесь этой формой
+				</p>
+				<form action="#" class="form">
+					<textarea required placeholder="*Задайте вопрос специалисту" class="form__question form__item"></textarea>
+					<input required type="number" placeholder="*Ваш телефон для ответа" class="form__number form__item">
+					<input type="submit" class="form__submit number__btn form__item" value="Получить консультацию">
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="wrapper wrapper--footer">
+			<div class="footer__logo">
+				<h3 class="footer__logo__title">СК "Своя Дача"</h3>
+				<a href="#" class="footer__logo_link">
+					<img src="images/logo.png" alt="3" class="footer__img">
+					<p class="img__subtext">
+						строим качественно и надежно
+					</p>
+				</a>
+				<p class="footer__logo__text">
+					Строительство домов и бань из бруса
+				</p>
+				<p class="footer__logo__text">
+					© 2010-2020 Строительная компания «Своя Дача»
+				</p>
+			</div>
+			<div class="footer__link">
+				<h2 class="footer__link__title">Строительство по всей России</h2>
+				<ul class="footer__list left">
+					<li><a href="#" class="footer__list__item link__hover">
+						Дома из бруса
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Каркасные дома
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Бани из бруса
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Установка фундамента
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Печи для бань
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Доставка
+					</a></li>
+				</ul>
+				<ul class="footer__list right">
+					<li><a href="o-kompanii.html" class="footer__list__item link__hover">
+						О компании
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Готовые дома
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Фотоотчеты
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Отзывы
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Оплата
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Контакты
+					</a></li>
+				</ul>
+			</div>
+			<div class="footer__contacts">
+				<h3 class="footer__contacts__title">Контакты</h3>
+				<a href="tel:8-800-707-13-44" class="footer__number consultation__numberText consultation__link">8-800-707-13-44</a>
+				<strong class="footer__time">Режим работы: ПН-ВС 9:00 - 18:00</strong>
+				<a href="mailto:mail@svodacha.ru" class="footer__mail contacts__link--mail contacts__link">mail@svodacha.ru</a>
+				<p class="footer__location"> Адрес производства: Вологодская обл,<br> г. Устюжна, ул. Луговая 1,офис 22</p>
+			</div>
+
+		</div>
+	</div>
+</footer>
+<div class="anchor">
+	<a href="#top" class="scrolling__body">
+		<span class="scrolling anchor__arrow"></span>
+	</a>
+</div>
+</main>
+</body>
 </html>

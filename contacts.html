@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru" id="all">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Дома и бани из бруса, каркасные дома под ключ от компании Своя Дача: высокое качество по низким ценам.">
+	<title>Контакты – Строительство домов и бань из бруса Своя Дача</title>
+	<link rel="stylesheet" href="fonts/main.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/adaptive.css">
+	<script src="src/jquery-3.5.0.min.js" defer></script>
+	<script src="src/main.js" defer></script>
+</head>
+<body>
+	<main class="page">
+	<!-- Popup -->
+	<div class="popup" id="pop_up">
+	<div class="popup_content">
+		<h2 class="popup__title">Заявка на строительство</h2>
+		<form action="">
+				<input name="calculate-name" type="text" value="" class="form__item" required="" placeholder="Ваше имя" x-autocompletetype="name">
+				<input name="calculate-phone" type="text" value="" class="form__item" required="" placeholder="Ваш номер телефона" x-autocompletetype="tel">
+				<input name="calculate-email" type="email" value="" class="form__item" placeholder="*Введите Ваш email" required="" x-autocompletetype="email">
+				<input type="file" name="calcProjFile[]" multiple="" value="1" size="40" class="file-request" aria-invalid="false">
+				<textarea name="calculate-message" rows="3" class="form__item form--popup form__question" required="" placeholder="*Комментарий к заказу"></textarea>
+			<input type="submit" class="form__submit number__btn form__item" value="Получить консультацию">
+		</form>
+		<button class="popup_close" id="popup_btn_close">закрыть</button>
+	</div>
+</div>
+<header class="header--contacts">
+	<nav class="navbar">
+		<div class="container container--nav">
+			<div class="wrapper wrapper--block">
+				<a href="index.html" class="logo__link" title="Строительство домов из бруса - СК Своя Дача">
+					<img src="images/logo.png" alt="#" class="logo">
+				</a>
+				<div class="navbar__adaptiveLinks">
+					<div class="nav__burgerMenu">
+						<a href="javascript://0" class="burgerMenu__link ">
+							<p class="burgerMenu--line"></p>
+						</a>
+					</div>
+					<a href="mailto:" class="navbar__adaptiveItem">	
+						<span class="navbar__adaptiveItem--cont adaptiveItem--tell"></span>
+					</a>
+					<a href="tel:37360142768" class="navbar__adaptiveItem">
+						<span class="navbar__adaptiveItem--cont adaptiveItem--mail"></span>
+					</a>
+
+				</div>
+			<div class="clearfix"></div>
+			<div class="nav__collapse">
+				<ul class="nav__collapse__list">
+					<li class="list__item">
+						<a href="javascript://0" class="list__link collapse__btn">о компании<span class="caret"></span></a>
+						
+						<ul class="nav__collapse__menu">
+							<li class="collapse__menu__item">
+								<a href="o-kompanii.html" class="collapse__menu__link">о компаний</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">доставка</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">оплата</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">отзывы клиентов</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">кредитование</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list__item">
+						<a href="javascript://0" class="list__link collapse__btn">строительство<span class="caret"></span></a>
+						<ul class="nav__collapse__menu">
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">дом из бруса</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">каркасные дома</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">бани из бруса</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">фундаменты</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">печи для бань</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list__item">
+						<a href="javascript://0" class="list__link collapse__btn">наши работы<span class="caret"></span></a>	
+						<ul class="nav__collapse__menu">
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">готовые дома</a>
+							</li>
+							<li class="collapse__menu__item">
+								<a href="#" class="collapse__menu__link">фотоотчеты</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list__item">
+						<a href="contacts.html"  class="list__link">контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__contacts">
+				<div class="contacts__mail__block contacts__blocks">
+					<a href="mailto:mail@svodacha.ru" class="contacts__link--mail contacts__link">mail@svodacha.ru</a>
+					<button class="mail__btn contacts__btn" onclick="popup()">рассчитать проект</button>
+				</div>
+				<div class="contacts__number__block contacts__blocks">
+					<a href="tel:8-800-707-13-44" class="contacts__link--number contacts__link">8-800-707-13-44</a>
+					<button class="number__btn contacts__btn" onclick="popup()">заказать звонок</button>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+		
+	</nav>
+</header>
+<div class="about__header__content">
+	<div class="container">
+		<a href="index.html" class="about__header__link consultation__mail__link consultation__link">Главная</a>
+			<span class="currentPage">Контакты</span>
+			<div class="about__header__page">
+				<h1 class="about__header__title">Контакты</h1>
+				<h2 class="about__header__subtext">Адрес производства:</h2>
+					
+			<p class="about__header__text">
+				Вологодская обл., г. Устюжна, ул. Луговая 1, офис 22
+			</p>
+			<p class="about__header__text">
+				Менеджер: Михаил Андреев.
+			</p>
+			<p class="about__header__text">
+				Тел.: <a href="tel:8-800-707-13-44">8-800-707-13-44</a> — Бесплатная линия по всей России
+			</p>
+				<p class="about__header__text">
+					<a href="tel:8(963)718-75-53">8 (963) 718-75-53</a> — Билайн
+				</p>
+				<p class="about__header__text">
+				Прием звонков осуществляется: с 9:00 ч. до 18:00 ч. ежедневно
+			</p>
+				<h2 class="about__header__subtext">
+				Офис в Санкт-Петербурге:
+			</h2>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae378b31d87ed9b635a902f962a0373de7e29f8ba12c6a60115fc36880ff618d3&amp;source=constructor" height="400"></iframe>
+				<p class="about__header__text">Тел.: <a href="tel:8(812)906-45-11">8 (812) 906-45-11</a> — Бесплатная линия по всей России</p>
+				<p class="about__header__text">г. Санкт-Петербург, Ленинский проспект 141.</p>
+				<h2 class="about__header__subtext">Офис в Москве:</h2>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad02eaf28e10c73f28f43a2062ef7e2404c309d85664db359798260cf3171e964&amp;source=constructor" height="400"></iframe>
+				<p class="about__header__text">г. Москва, 33-й километр, МКАД, Варшавское шоссе, торговый комплекс «Каширский двор-3»</p>
+				<p class="about__header__text">Тел.: <a href="tel:8(495)066-52-37">8 (495) 066-52-37</a></p>
+				<p class="about__header__text">Режим работы: 10:00 — 18:00</p>
+			</div>
+	</div>
+</div>
+<section class="consultation">
+	<div class="container">
+		<h2 class="readyProjects__title consultation__title">Получить бесплатную консультацию</h2>
+		<div class="wrapper">
+			<div class="consultation__consultant">
+				<img src="images/consultant.png" alt="3" class="consultant__img">
+				<p class="consultant__job">инженер-консультант</p>
+				<p class="consultant__name">Михаил Андреев</p>
+			</div>
+			<div class="consultation__contacts">
+				<div class="consultation__number">
+					<p class="consultation__number__text">Консультация специалиста по телефону:</p>
+					<a href="tel:8-800-707-13-44" class="consultation__numberText consultation__link">8-800-707-13-44</a>
+					<p class="consultation__number__subtext">Бесплатный звонок по всей России</p>
+				</div>
+				<div class="consultation__mail">
+					<p class="consultation__mail__text">Или пишите нам на почту:</p>
+					<a href="mailto:mail@svodacha.ru" class="consultation__mail__link consultation__link">mail@svodacha.ru</a>
+				</div>
+			</div>
+			<div class="consultation__form">
+				<p class="consultation__title">
+					Или используйтесь этой формой
+				</p>
+				<form action="#" class="form">
+					<textarea required placeholder="*Задайте вопрос специалисту" class="form__question form__item"></textarea>
+					<input required type="number" placeholder="*Ваш телефон для ответа" class="form__number form__item">
+					<input type="submit" class="form__submit number__btn form__item" value="Получить консультацию">
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="wrapper wrapper--footer">
+			<div class="footer__logo">
+				<h3 class="footer__logo__title">СК "Своя Дача"</h3>
+				<a href="#" class="footer__logo_link">
+					<img src="images/logo.png" alt="3" class="footer__img">
+					<p class="img__subtext">
+						строим качественно и надежно
+					</p>
+				</a>
+				<p class="footer__logo__text">
+					Строительство домов и бань из бруса
+				</p>
+				<p class="footer__logo__text">
+					© 2010-2020 Строительная компания «Своя Дача»
+				</p>
+			</div>
+			<div class="footer__link">
+				<h2 class="footer__link__title">Строительство по всей России</h2>
+				<ul class="footer__list left">
+					<li><a href="#" class="footer__list__item link__hover">
+						Дома из бруса
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Каркасные дома
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Бани из бруса
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Установка фундамента
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Печи для бань
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Доставка
+					</a></li>
+				</ul>
+				<ul class="footer__list right">
+					<li><a href="o-kompanii.html" class="footer__list__item link__hover">
+						О компании
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Готовые дома
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Фотоотчеты
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Отзывы
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Оплата
+					</a></li>
+					<li><a href="#" class="footer__list__item link__hover">
+						Контакты
+					</a></li>
+				</ul>
+			</div>
+			<div class="footer__contacts">
+				<h3 class="footer__contacts__title">Контакты</h3>
+				<a href="tel:8-800-707-13-44" class="footer__number consultation__numberText consultation__link">8-800-707-13-44</a>
+				<strong class="footer__time">Режим работы: ПН-ВС 9:00 - 18:00</strong>
+				<a href="mailto:mail@svodacha.ru" class="footer__mail contacts__link--mail contacts__link">mail@svodacha.ru</a>
+				<p class="footer__location"> Адрес производства: Вологодская обл,<br> г. Устюжна, ул. Луговая 1,офис 22</p>
+			</div>
+
+		</div>
+	</div>
+</footer>
+</main>
+</body>
+</html>
