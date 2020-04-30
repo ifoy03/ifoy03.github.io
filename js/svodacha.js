@@ -19,7 +19,7 @@ let owl = $('.owl-carousel');
   	margin: 30,
     responsive: {
       0:{
-        item: 1;
+        item: 1,
       },
       900:{
         item: 3,
