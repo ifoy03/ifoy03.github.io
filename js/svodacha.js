@@ -17,6 +17,14 @@ let owl = $('.owl-carousel');
   owl.owlCarousel({
   	autoWidth: true,
   	margin: 30,
+    responsive: {
+      0:{
+        item: 1;
+      },
+      900:{
+        item: 3,
+      },
+    },
   	nav: false,
     loop:true,
   	autoplay: true,
